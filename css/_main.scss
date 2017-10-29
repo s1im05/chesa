@@ -1,0 +1,28 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url('../assets/font/AvenirNextCyr-Regular.eot');
+  src: url('../assets/font/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/font/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../assets/font/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Avenir Next Cyr Regular', Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.light-gold {
+  background: $bg-gold-light;
+}
+
+.color-gold {
+  color: $bg-gold
+}
