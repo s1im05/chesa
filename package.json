@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-watch": "webpack -w"
+    "webpack-watch": "webpack -w",
+    "build": "webpack -p",
   },
   "author": "Vadim Suleimanov",
   "license": "ISC",
