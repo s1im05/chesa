@@ -13,6 +13,7 @@
 body {
   font-family: 'Avenir Next Cyr Regular', Arial, sans-serif;
   background: #f3f3f3;
+  padding-top: $nav-height;
 }
 
 .inline-block {
@@ -25,4 +26,12 @@ body {
 
 .color-gold {
   color: $bg-gold
+}
+
+main {
+  background: white;
+}
+
+.strong {
+    font-weight: bold;
 }

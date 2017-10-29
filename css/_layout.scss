@@ -44,7 +44,6 @@
 }
 
 .carousel {
-  margin-top: $nav-height;
   &.container {
     padding: 0;
   }
@@ -52,7 +51,7 @@
     height: 780px;
     background: url(../assets/carousel01.jpg) center no-repeat;
   }
-  .main-logo {
+  .main-logo, .apartment-logo {
     position: absolute;
     top: 50px;
     left: 100px;
@@ -62,6 +61,11 @@
     img {
       max-width: 100%;
     }
+  }
+  .apartment-logo {
+    left: 150px;
+    right: 150px;
+    top: 185px;
   }
   .carousel-control {
     background-image: none;
@@ -97,9 +101,105 @@
       margin: 0 15px;
     }
     &>a, &>a:hover {
+      text-shadow: 1px 1px 1px rgba(0,0,0,.5);
       color: white;
       font-size: 22px;
       text-decoration: none;
+    }
+  }
+}
+
+.location-map {
+  margin-bottom: 40px;
+  img {
+    max-width: 100%;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,.3);
+  }
+}
+.location-key {
+  margin: 60px 0;
+  img {
+    max-width: 100%;
+  }
+}
+.location-mail {
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 2em 0;
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+.location-table {
+  font-size: 18px;
+}
+
+.prices {
+  >thead {
+    background: $bg-gold;
+    color: #fff;
+    th {
+      text-align: center;
+    }
+  }
+  >tbody {
+    td {
+      text-align: center;
+    }
+  }
+}
+
+
+.img-zoomable {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: background-size 2s ease-in;
+  &.bg1 {
+    background: url(../assets/apt-bg-piano.jpg) center no-repeat;
+    background-size: 100% 100%;
+  }
+  &.bg2 {
+    background: url(../assets/apt-bg-wooden.jpg) center no-repeat;
+    background-size: 100% 100%;
+  }
+  &.bg3 {
+    background: url(../assets/apt-bg-penthouse.jpg) center no-repeat;
+    background-size: 100% 100%;
+  }
+  &.bg4 {
+    background: url(../assets/apt-bg-deluxe.jpg) center no-repeat;
+    background-size: 100% 100%;
+  }
+  &:hover {
+    background-size: 140% 140%;
+  }
+  .look {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    top: 50%;
+    margin-top: -13px;
+    left: 50%;
+    margin-left: -80px;
+    z-index: 20;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-top: 1px solid #fff;
+      width: 100px;
+      height: 1px;
+      margin-left: 30px;
+    }
+    &:before {
+      top: -8px;
+    }
+    &:after {
+      bottom: -5px;
     }
   }
 }

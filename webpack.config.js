@@ -31,15 +31,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: 'fonts/[hash].[ext]'
-                }
-            },
-            {
-                test: /icons\.(svg)$/,
-                loader: 'url-loader',
-                options: {
-                    limit: 1,
-                    name: 'ui/[name].[ext]'
+                    name: 'dist/fonts/[hash].[ext]'
                 }
             },
             {
@@ -47,7 +39,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: 'img/[hash].[ext]'
+                    name: 'dist/img/[hash].[ext]'
                 }
             },
             {
