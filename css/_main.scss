@@ -16,6 +16,17 @@ body {
   padding-top: $nav-height;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    color: darken($bg-gold, 20);
+  }
+}
+
+.times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .inline-block {
   display: inline-block;
 }
