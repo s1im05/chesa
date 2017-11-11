@@ -48,6 +48,25 @@ import '../node_modules/bootstrap/dist/js/bootstrap'
             e.preventDefault();
             $('.overlay').remove();
         });
+
+        // carousel thumbs
+        const items = $('.carousel .item');
+        if (items.length) {
+            const container = $('.carousel-thumbs'), bg = container.data('bg'), width = 120;
+            for (let i = 0; i < items.length; i++) {
+                $('<a href="#" />').css({background: `url(${bg}) no-repeat -${i * width}px 0`})
+                    .on('click', function (e) {
+                        e.preventDefault();
+                        $('.carousel').carousel(i);
+                    })
+                    .appendTo(container);
+            }
+            $('.carousel').on('slid.bs.carousel', function(e) {
+                const i = items.index($('.carousel .item.active'));
+                container.find('.active').removeClass('active').end()
+                    .children('a').eq(i).addClass('active');
+            }).trigger('slid');
+        }
     });
 
 })(window, jQuery);
