@@ -36,6 +36,18 @@ import '../node_modules/bootstrap/dist/js/bootstrap'
             });
         };
         $(w).on('resize', resize).trigger('resize');
+
+
+        // overlay
+        $(document).on('click', '.overlay-open', function (e){
+            e.preventDefault();
+            const src = $(this).attr('href');
+            $('<div class="overlay" />').append('<a class="close overlay-close" href="#">close</a><img class="overlay-close" src="'+src+'">').appendTo('body');
+        })
+        .on('click', '.overlay-close', function(e) {
+            e.preventDefault();
+            $('.overlay').remove();
+        });
     });
 
 })(window, jQuery);

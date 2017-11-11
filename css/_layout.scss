@@ -134,6 +134,34 @@ footer.booking-footer {
   }
 }
 
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  background: rgba(0,0,0,.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  & > img {
+    border: 15px solid white;
+    max-width: 1200px;
+    margin: auto;
+    vertical-align: middle;
+    max-height: 80vh;
+    position: relative;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+  }
+}
+
 .ap-back {
   color: $bg-gold;
   position: absolute;
