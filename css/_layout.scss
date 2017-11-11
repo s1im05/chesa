@@ -17,27 +17,27 @@
     text-decoration: none;
   }
   .introduction, .book, .lang {
-    margin-top: 32px;
+    margin-top: 12px;
   }
   .lang {
     font-weight: bold;
   }
   .delim {
-    margin: 20px 25px;
+    margin: 8px 25px;
     float: right;
     border-left: 1px solid white;
     width: 1px;
-    height: 48px;
+    height: 32px;
   }
   .book {
     margin-right: 10px;
   }
   .logo {
     float: left;
-    margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 20px;
+    height: 49px;
     img {
-
+      max-height: 100%;
     }
   }
 }
@@ -374,5 +374,8 @@ footer.booking-footer {
     &> img {
       max-width: 300px;
     }
+  }
+  a, a:hover {
+    color: white;
   }
 }
