@@ -124,14 +124,13 @@ footer.booking-footer {
   img {
     max-width: 100%;
   }
-  .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-  }
-  .info-row {
-
+  .table {
+    td {
+      width: 50%;
+      text-align: center;
+      vertical-align: middle;
+      border: none;
+    }
   }
 }
 
@@ -247,10 +246,13 @@ footer.booking-footer {
   }
 }
 
+.prices-container {
+  padding: 70px 80px 20px 80px;
+}
 .prices {
   >thead {
-    background: $bg-gold;
-    color: #fff;
+    background: white;
+    color: $bg-gold;
     th {
       text-align: center;
     }
@@ -258,6 +260,9 @@ footer.booking-footer {
   >tbody {
     td {
       text-align: center;
+      &.strong {
+        border-right: 1px solid #ccc;
+      }
     }
   }
 }
