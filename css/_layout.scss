@@ -236,7 +236,7 @@ footer.booking-footer {
 .plan__delim {
   border-bottom: 1px solid $bg-gold;
   margin: 1em auto 2em auto;
-  width: 500px;
+  max-width: 500px;
 }
 
 
@@ -274,13 +274,19 @@ footer.booking-footer {
   }
   .location__delim {
     border-bottom: 1px solid $bg-gold;
-    width: 500px;
+    max-width: 500px;
     margin: 2em auto;
   }
 }
 
 .prices-container {
   padding: 70px 80px 20px 80px;
+}
+@media only screen and (max-width: 768px) {
+  .prices-container {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
 }
 .prices {
   >thead {
