@@ -287,6 +287,19 @@ footer.booking-footer {
     margin: 20px 0;
     padding: 10px 0;
   }
+  .carousel .apartment-logo {
+    top: 30%;
+    left: 20%;
+    right: 20%;
+  }
+  .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .carousel-control > img {
+    height: 50px;
+  }
 }
 .prices {
   >thead {
