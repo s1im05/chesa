@@ -263,6 +263,10 @@ footer.booking-footer {
   p {
     font-size: 28px;
     line-height: 36px;
+    &.small {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
   h1 {
     font-size: 28px;
@@ -277,6 +281,27 @@ footer.booking-footer {
     max-width: 500px;
     margin: 2em auto;
   }
+}
+.location-popup {
+  display: none;
+  position: fixed;
+  background: none;
+  top: $nav-height;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .container {
+    background: $bg-gold-light;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    .popup-close {
+      right: 24px;
+      top: 15px;
+      position: absolute;
+    }
+  }
+  font-size: 18px;
 }
 
 .prices-container {

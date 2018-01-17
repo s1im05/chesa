@@ -67,6 +67,18 @@ import '../node_modules/bootstrap/dist/js/bootstrap'
                     .children('a').eq(i).addClass('active');
             }).trigger('slid');
         }
+
+        // popup
+        $(document).on('click', '.popup-toggle', function(e){
+            e.preventDefault();
+            const id = $(this).attr('href');
+            $(id).show();
+            $('main').hide();
+        }).on('click', '.popup-close', function(e){
+            e.preventDefault();
+            $('.location-popup:visible').hide();
+            $('main').show();
+        });
     });
 
 })(window, jQuery);
